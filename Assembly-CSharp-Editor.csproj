@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{2132EE23-1D18-348B-5CC1-1C4F86412C45}</ProjectGuid>
+	<ProjectGuid>{60CEB779-DA77-B100-8406-6C241572F125}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -44,23 +44,57 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\Config\Config.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\Config\ConfigWindow.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\ExpressionManagerEditor.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\Inspector\InspectorBase.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\Inspector\PMDInspector.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\Inspector\VMDInspector.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\LoadedWindow.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\PMDLoaderWindow.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\AvatarSettingScript.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\ComputeSkin.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\MMDConverter.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\MMDFormat.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\MMDMathf.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\PMDLoaderScript.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\Private\VMDLoaderScript.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\MMDLoader\VMDLoaderWindow.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\XFileImporter\Private\XFileConverter.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\XFileImporter\Private\XFileFormat.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\XFileImporter\Private\XFileImporter.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Editor\XFileImporter\XFileImporterWindow.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVRBuild.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVRCameraControllerEditor.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVRDeviceEditor.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVREditorGUIUtility.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVRPlayerControllerEditor.cs" />
      <Compile Include="Assets\Oculus Rift\OVR\Editor\OVRPrefabs.cs" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialVertFrag.cginc" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\license.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda式初音ミク・アペンド_m3456ver_1.06.pmd.xml" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe(ねこみみ).txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterial-Trans.shader" />
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\変更箇所.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\readme_English.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterial.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialOutline.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialOutline-Trans.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\ReadMe.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialSurface.cginc" />
      <None Include="Assets\NyARToolKit\Data\NyIdMarker.txt" />
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\Oculus Rift\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\HalfLambert.shader" />
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{5284C8F0-284A-4BC2-44C9-13C5104118A7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{EC36D45E-F275-52DC-78E7-98CEB365BBB0}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

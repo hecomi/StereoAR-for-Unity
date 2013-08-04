@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5284C8F0-284A-4BC2-44C9-13C5104118A7}</ProjectGuid>
+	<ProjectGuid>{EC36D45E-F275-52DC-78E7-98CEB365BBB0}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -44,6 +44,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MikuMikuDance for Unity\Resources\ExpressionManagerScript.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Resources\IK\CCDIKSolver.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Resources\MMDEngine.cs" />
+     <Compile Include="Assets\MikuMikuDance for Unity\Resources\MMDSkinsScript.cs" />
      <Compile Include="Assets\NyARToolKit\NyARToolkitCS\src.markersystem\cs\markersystem\INyARMarkerSystemConfig.cs" />
      <Compile Include="Assets\NyARToolKit\NyARToolkitCS\src.markersystem\cs\markersystem\INyARMarkerSystemSquareDetect.cs" />
      <Compile Include="Assets\NyARToolKit\NyARToolkitCS\src.markersystem\cs\markersystem\INyARSingleCameraSystemObserver.cs" />
@@ -270,10 +274,24 @@
      <Compile Include="Assets\Oculus Rift\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\PS Eye\Script\PSEyeTexture.cs" />
      <Compile Include="Assets\Script\ARCameraWithPSEyeBehaviour.cs" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialVertFrag.cginc" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\license.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda式初音ミク・アペンド_m3456ver_1.06.pmd.xml" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe(ねこみみ).txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterial-Trans.shader" />
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\変更箇所.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\readme_English.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterial.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialOutline.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialOutline-Trans.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\ReadMe.txt" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialSurface.cginc" />
      <None Include="Assets\NyARToolKit\Data\NyIdMarker.txt" />
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\Oculus Rift\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\MikuMikuDance for Unity\Resources\HalfLambert.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

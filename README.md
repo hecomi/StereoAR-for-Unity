@@ -21,6 +21,14 @@ StereoAR for Unity
 * NyARToolKit for Unity 4.1.1
 	* http://sourceforge.jp/projects/nyartoolkit/
 	* AR マーカの認識及び位置制御に利用しています
+* MMD for Unity r153
+	* http://sourceforge.jp/projects/mmd-for-unity/
+	* MMD のモデルを Unity 上で扱うために利用しています
+
+お借りした素材
+--------------
+* 【改変】Tda式初音ミク・アペンド m3456ver1.06
+	* http://bowlroll.net/up/dl16535
 
 ライセンス
 ----------
