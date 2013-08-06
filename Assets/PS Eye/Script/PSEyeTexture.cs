@@ -4,7 +4,7 @@ using System.Collections;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-public class PSEyeTexture
+public class PSEyeTexture : IDisposable
 {
 	// dll name
     private const string CLEyeMulticam_DllName = "CLEyeMulticam.dll";
@@ -371,6 +371,9 @@ public class PSEyeTexture
 	// thread
 	private Thread thread_;
 	private Mutex  mutex_;
+	
+	// disposal
+	private bool disposed_ = false;
 	#endregion
 	
 	
@@ -423,6 +426,13 @@ public class PSEyeTexture
 	}
 	
 	~PSEyeTexture() {
+		Dispose();
+	}
+	
+	public void Dispose() {
+		if (disposed_) return;
+		disposed_ = true;
+		
 		Stop();
 		pixels_handle_.Free();
 		CLEyeDestroyCamera(camera_);
