@@ -274,6 +274,7 @@
      <Compile Include="Assets\Oculus Rift\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\PS Eye\Script\PSEyeTexture.cs" />
      <Compile Include="Assets\Script\ARCameraWithPSEyeBehaviour.cs" />
+     <Compile Include="Assets\Script\FaceDirection.cs" />
      <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialVertFrag.cginc" />
      <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe.txt" />
      <None Include="Assets\MikuMikuDance for Unity\license.txt" />
