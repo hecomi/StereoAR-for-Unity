@@ -9,6 +9,9 @@ public class MikuAppearMotion : MonoBehaviour {
 	public Vector3 AppearScaleFrom    = Vector3.zero;
 	public Vector3 AppearScaleTo      = Vector3.zero;
 	
+	private Vector3 originalPosition_;
+	private Vector3 originalScale_;
+	
 	public float   Velocity   = 0.02f;
 	public float   Diff       = 30.0f;
 	
@@ -21,7 +24,15 @@ public class MikuAppearMotion : MonoBehaviour {
 		
 		// appear motion start
 		transform.animation.CrossFade("Appear");
+		transform.animation["Appear"].time = 0;
 		AnotherMiku.GetComponent<MikuAppearMotion>().Appear();
+	}
+	
+	public void Reset() {
+		transform.localPosition = originalPosition_;
+		transform.localScale    = originalScale_;
+		startFlag_ = false;
+		endFlag_   = false;
 	}
 	
 	void Awake() {
@@ -31,9 +42,11 @@ public class MikuAppearMotion : MonoBehaviour {
 		
 		AppearPositionTo += transform.localPosition;
 		transform.localPosition += AppearPositionFrom;
+		originalPosition_ = transform.localPosition;
 		
 		AppearScaleTo += transform.localScale;
 		transform.localScale += AppearScaleFrom;
+		originalScale_ = transform.localScale;
 	}
 	
 	void Update() {
