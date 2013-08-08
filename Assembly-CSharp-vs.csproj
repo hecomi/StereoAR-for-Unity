@@ -274,7 +274,8 @@
      <Compile Include="Assets\Oculus Rift\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\PS Eye\Script\PSEyeTexture.cs" />
      <Compile Include="Assets\Script\ARCameraWithPSEyeBehaviour.cs" />
-     <Compile Include="Assets\Script\FaceDirection.cs" />
+     <Compile Include="Assets\Script\MikuAppearMotion.cs" />
+     <Compile Include="Assets\Script\MikuFaceDirection.cs" />
      <None Include="Assets\MikuMikuDance for Unity\Resources\PMDMaterial\Shaders\MeshPmdMaterialVertFrag.cginc" />
      <None Include="Assets\MikuMikuDance for Unity\PMD\Tda式初音ミク・アペンド改変Ver1.06\Tda様のReadMe.txt" />
      <None Include="Assets\MikuMikuDance for Unity\license.txt" />
@@ -293,6 +294,7 @@
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\Oculus Rift\OVR\Shaders\OVRGUIShader.shader" />
      <None Include="Assets\MikuMikuDance for Unity\Resources\HalfLambert.shader" />
+     <None Include="Assets\Materials\ClippingMask.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

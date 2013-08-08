@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FaceDirection : MonoBehaviour {
+public class MikuFaceDirection : MonoBehaviour {
 
 	public GameObject Head   = null;
 	public GameObject Target = null;

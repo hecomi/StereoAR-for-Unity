@@ -88,6 +88,7 @@
      <None Include="Assets\Oculus Rift\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\Oculus Rift\OVR\Shaders\OVRGUIShader.shader" />
      <None Include="Assets\MikuMikuDance for Unity\Resources\HalfLambert.shader" />
+     <None Include="Assets\Materials\ClippingMask.shader" />
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
